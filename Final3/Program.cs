@@ -9,7 +9,7 @@ Console.Write("Введите значение n: ");
 int n = int.Parse(Console.ReadLine());
 
 int result = Ackermann(m, n);
-Console.WriteLine(Console.WriteLineConsole $"A({m}, {n}) = {result}");
+Console.WriteLine(Console.WriteLine $"A({m}, {n}) = {result}");
 
 static int Ackermann(int m, int n)
 {
@@ -25,8 +25,10 @@ static int Ackermann(int m, int n)
     {
         return Ackermann(m - 1, Ackermann(m, n - 1));
     }
-    else{
-        
+    else
+    {
+        return 0;
     }
 
 }
+
